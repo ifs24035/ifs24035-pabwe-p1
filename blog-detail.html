@@ -1,16 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>How to Deploy a Web Application Using Docker and NGINX on Your Own Server</title>
 </head>
 <body>
 
+<header>
+<nav>
 <p>
 <a href="index.html">IMDb Top 3</a> &nbsp;|&nbsp;
 <a href="blog.html">Dev Blogs</a> &nbsp;|&nbsp;
 <a href="form.html">Form Pendaftaran</a> &nbsp;|&nbsp;
 <a href="cv.html">CV</a>
 </p>
+</nav>
+</header>
+
+<main>
 
 <img src="gambar-p1-pabwe/7.png" width="100%" alt="cover blog Docker NGINX">
 
@@ -31,7 +39,7 @@
 
 <p>In this blog, I'll show you step by step how to serve your app with a domain, route traffic with NGINX, and run it all inside a Docker container. This guide is specifically tailored for a Linux-based server.</p>
 
-<h3>Step 1: Setup docker</h3>
+<h2>Step 1: Setup docker</h2>
 <p>First, let's set up Docker. I'm using a simple React app as an example, but feel free to use any application or codebase of your choice. Create a Dockerfile in your project directory to define how your app should be containerized.</p>
 <p>Dockerfile:</p>
 <pre>
@@ -43,22 +51,24 @@ COPY . .
 CMD [ "npm", "start" ]
 </pre>
 
-<h3>Step 2: Build and Run the Docker Container (on your server)</h3>
+<h2>Step 2: Build and Run the Docker Container (on your server)</h2>
 <p>Once you've created your Dockerfile, the next step is to build your Docker image and run it to make sure everything is working as expected.</p>
 
-<h3>Conclusion</h3>
+<h2>Conclusion</h2>
 <p>Deploying your web application using Docker and NGINX on your own server might sound intimidating at first, but once you break it down, it's quite manageable.</p>
 <p>By containerizing your app, setting up NGINX as a reverse proxy, and linking everything together on your VPS, you gain full control over your deployment process.</p>
 
 <hr>
 
-<h3>Top comments (0)</h3>
+<h2>Top comments (0)</h2>
 
 <p>
 <img src="gambar-p1-pabwe/6.png" width="32" height="32" alt="profil pengguna">
 &nbsp;
 <textarea rows="3" placeholder="Add to the discussion"></textarea>
 </p>
+
+</main>
 
 </body>
 </html>

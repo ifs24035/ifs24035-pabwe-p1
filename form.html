@@ -1,41 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Form Pendaftaran Akun</title>
 </head>
 <body>
 
+<header>
+<nav>
 <p>
 <a href="index.html">IMDb Top 3</a> &nbsp;|&nbsp;
 <a href="blog.html">Dev Blogs</a> &nbsp;|&nbsp;
 <a href="form.html">Form Pendaftaran</a> &nbsp;|&nbsp;
 <a href="cv.html">CV</a>
 </p>
+</nav>
+</header>
+
+<main>
+
+<h1>Form Pendaftaran Akun</h1>
 
 <form>
   <fieldset>
     <legend>Daftar Akun</legend>
 
     <p>
-      Nama Lengkap: <input type="text" name="nama_lengkap">
+      <label>Nama Lengkap: <input type="text" name="nama_lengkap"></label>
     </p>
 
     <p>
       Jenis Kelamin:
-      <input type="radio" name="jenis_kelamin" value="laki-laki"> Laki-Laki
-      <input type="radio" name="jenis_kelamin" value="perempuan"> Perempuan
+      <label><input type="radio" name="jenis_kelamin" value="laki-laki"> Laki-Laki</label>
+      <label><input type="radio" name="jenis_kelamin" value="perempuan"> Perempuan</label>
     </p>
 
     <p>
-      Tempat Lahir: <input type="text" name="tempat_lahir">
+      <label>Tempat Lahir: <input type="text" name="tempat_lahir"></label>
     </p>
 
     <p>
-      Tanggal Lahir: <input type="date" name="tanggal_lahir">
+      <label>Tanggal Lahir: <input type="date" name="tanggal_lahir"></label>
     </p>
 
     <p>
-      Agama:
+      <label>Agama:
       <select name="agama">
         <option value="">--- Pilih Agama ---</option>
         <option value="islam">Islam</option>
@@ -45,22 +55,25 @@
         <option value="buddha">Buddha</option>
         <option value="konghucu">Konghucu</option>
       </select>
+      </label>
     </p>
 
     <p>
       Hobi:
-      <input type="checkbox" name="hobi" value="olahraga"> Olahraga
-      <input type="checkbox" name="hobi" value="membaca"> Membaca
-      <input type="checkbox" name="hobi" value="ngoding"> Ngoding
+      <label><input type="checkbox" name="hobi" value="olahraga"> Olahraga</label>
+      <label><input type="checkbox" name="hobi" value="membaca"> Membaca</label>
+      <label><input type="checkbox" name="hobi" value="ngoding"> Ngoding</label>
     </p>
 
     <p>
-      Password: <input type="password" name="password">
+      <label>Password: <input type="password" name="password"></label>
     </p>
 
     <p>
+      <label>
       <input type="checkbox" name="setuju" value="ya">
       Dengan mendaftar saya setuju dengan Ketentuan dan Kebijakan Privasi Aplikasi.
+      </label>
     </p>
 
     <p>
@@ -70,6 +83,8 @@
 
   </fieldset>
 </form>
+
+</main>
 
 </body>
 </html>
