@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form Pendaftaran Akun</title>
+</head>
+<body>
+
+<p>
+<a href="index.html">IMDb Top 3</a> &nbsp;|&nbsp;
+<a href="blog.html">Dev Blogs</a> &nbsp;|&nbsp;
+<a href="form.html">Form Pendaftaran</a> &nbsp;|&nbsp;
+<a href="cv.html">CV</a>
+</p>
+
+<form>
+  <fieldset>
+    <legend>Daftar Akun</legend>
+
+    <p>
+      Nama Lengkap: <input type="text" name="nama_lengkap">
+    </p>
+
+    <p>
+      Jenis Kelamin:
+      <input type="radio" name="jenis_kelamin" value="laki-laki"> Laki-Laki
+      <input type="radio" name="jenis_kelamin" value="perempuan"> Perempuan
+    </p>
+
+    <p>
+      Tempat Lahir: <input type="text" name="tempat_lahir">
+    </p>
+
+    <p>
+      Tanggal Lahir: <input type="date" name="tanggal_lahir">
+    </p>
+
+    <p>
+      Agama:
+      <select name="agama">
+        <option value="">--- Pilih Agama ---</option>
+        <option value="islam">Islam</option>
+        <option value="katolik">Katolik</option>
+        <option value="protestan">Protestan</option>
+        <option value="hindu">Hindu</option>
+        <option value="buddha">Buddha</option>
+        <option value="konghucu">Konghucu</option>
+      </select>
+    </p>
+
+    <p>
+      Hobi:
+      <input type="checkbox" name="hobi" value="olahraga"> Olahraga
+      <input type="checkbox" name="hobi" value="membaca"> Membaca
+      <input type="checkbox" name="hobi" value="ngoding"> Ngoding
+    </p>
+
+    <p>
+      Password: <input type="password" name="password">
+    </p>
+
+    <p>
+      <input type="checkbox" name="setuju" value="ya">
+      Dengan mendaftar saya setuju dengan Ketentuan dan Kebijakan Privasi Aplikasi.
+    </p>
+
+    <p>
+      <input type="reset" value="Reset">
+      <input type="submit" value="Submit">
+    </p>
+
+  </fieldset>
+</form>
+
+</body>
+</html>
